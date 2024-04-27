@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+	font-family: 'Bungee', cursive;
+	font-weight: normal;
+    padding: 16px 15px;
+	background: #182c61;
+	color: #ecf0f1;
+}
+
+
+body{
+	font-family: "Roboto", sans-serif;
+}
+
+	
+
+header nav li {
+	display: inline;
+	margin-left: 16px;
+	font-size: 1.2em;
+}
+
+header nav li a {
+	color: #ecf0f1;
+	text-decoration: none;
+}
+
+.container {
+
+	width: 100%;
+	margin: 0 auto;
+}
+
+header .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.corpo{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.parte1 img{
+    width: 100%;
+    padding: 30px;
+}
+
+.parte2{
+    padding: 30px;
+}
+
+.parte2 h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 15px;
+    color: rgb(7, 5, 102);
+}
+
+.parte2 h3{
+    display: flex;
+    border-top: 2px solid rgb(23, 0, 77);
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.produtos h1{
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    padding: 0 30px;
+    color: rgb(7, 5, 102);
+}
+
+.teclados{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.teclados img{
+    width: 100%;
+    padding: 10px 30px;
+}
+
+#teclado4 img{
+    width: 335px;
+}
+
+.teclados h2, .teclados h4, button{
+    padding: 5px 30px;
+}
+
+.teclados h4{
+    font-weight: normal;
+}
+
+.teclado{
+    padding: 10px;
+}
+
+button{
+    margin-left: 29px;
+    color: #fff;
+    background-color: rgb(15, 0, 68);
+    box-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+    header nav{
+        display: block;
+    }
+
+    header h1{
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    header nav li{
+        font-size: 1em;
+        font-weight: 100;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .corpo{
+        display: block;
+    }
+
+
+    .teclados{
+    display: block;
+    margin-bottom: 30px;
+    }
+
+    .teclados img{
+    width: 90%;
+    }
+
+
+    #teclado4 img{
+        width: 280px;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .corpo{
+        display: block;
+    }
+
+    .teclados{
+        grid-template-columns: repeat(2, 49%);
+        margin-bottom: 30px;
+    }
+
+    #teclado4 img{
+        width: 358px;
+    }
+}
